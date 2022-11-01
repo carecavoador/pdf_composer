@@ -4,13 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pypdf2 = "*"
+poppler-utils = "*"
+pypdf2 = {editable = true, git = "https://github.com/carecavoador/PyPDF2"}
+pyinstaller = "*"
 
 [dev-packages]
-black = "*"
 
 [requires]
-python_version = "3.10"
-
-[pipenv]
-allow_prereleases = true
+python_version = "3.11"
