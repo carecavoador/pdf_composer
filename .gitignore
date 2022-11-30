@@ -1,7 +1,6 @@
+__pycache__
 .history
 .vscode
 build
 dist
 *.spec
-
-novo.pdf
