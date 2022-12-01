@@ -81,6 +81,8 @@ def distribuir(lista_paginas: list[PageObject], largura_rolo: float) -> None:
             altura_pagina = float(pagina.mediabox.height)
             pos_y = (altura_rolo - altura_pagina) / 2
 
+            # TODO: implementar caso a página seja maior que o rolo
+
             # Página não cabe na montagem
             if (pos_x + largura_pagina + (MARGEM / 2)) > largura_rolo:
                 break
