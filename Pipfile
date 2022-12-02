@@ -7,6 +7,7 @@ name = "pypi"
 poppler-utils = "*"
 pypdf2 = {editable = true, git = "https://github.com/carecavoador/PyPDF2"}
 pyinstaller = "*"
+reportlab = "*"
 
 [dev-packages]
 

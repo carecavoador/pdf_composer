@@ -1,6 +1,6 @@
 from pathlib import Path
 from PyPDF2 import PdfReader
-from composer import distribuir, LARGURA_ROLO
+from xcomposer import distribuir, LARGURA_ROLO
 
 
 def testa_composer():

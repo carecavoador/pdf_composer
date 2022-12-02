@@ -59,14 +59,14 @@ def orienta_pagina(_pagina: PageObject, vertical: bool = True) -> PageObject:
     return _pagina
 
 
-def distribuir(lista_paginas: list[PageObject], largura_rolo: float) -> None:
+def distribuir(paginas: list[PageObject], largura_rolo: float = LARGURA_ROLO) -> None:
     """Distribui uma lista de páginas em um rolo."""
 
     # Orienta as páginas na vertical
-    lista_paginas = [orienta_pagina(pagina) for pagina in lista_paginas]
+    paginas = [orienta_pagina(pagina) for pagina in paginas]
 
     # Ordena da página mais alta para a mais baixa
-    paginas_ordenadas = sorted(lista_paginas, key=sort_paginas, reverse=True)
+    paginas_ordenadas = sorted(paginas, key=sort_paginas, reverse=True)
 
     numero_de_pagina = 1
 
